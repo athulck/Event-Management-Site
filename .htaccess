@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|images|uploads|robots\.txt|scss|css|font|img|docs|js|system)
+<<<<<<< HEAD
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+=======
+RewriteRule ^(.*)$ index.php/$1 [L]
+>>>>>>> 8b70ec8160d1da8a03c10391821f0094ae411c8d

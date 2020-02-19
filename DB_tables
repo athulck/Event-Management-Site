@@ -1,0 +1,53 @@
+
+------------------------------------------------------------- Events -----------------------------------------------------------------------
+
+
+CREATE TABLE Events ( ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT, Name VARCHAR(255) NOT NULL, Description TEXT, Type VARCHAR(50), Technology VARCHAR(50), Org_Body VARCHAR(50), Org_Faculty_ID INT NOT NULL, Date DATE NOT NULL, No_of_Days INT, Start_Time TIME, End_Time TIME, Venue VARCHAR(255), Reg_Link VARCHAR(255), Created_On TIMESTAMP NOT NULL DEFAULT NOW() );
+
+ALTER TABLE Events AUTO_INCREMENT = 100;
+
+mysql> DESC Events;
++----------------+--------------+------+-----+-------------------+----------------+
+| Field          | Type         | Null | Key | Default           | Extra          |
++----------------+--------------+------+-----+-------------------+----------------+
+| ID             | int(11)      | NO   | PRI | NULL              | auto_increment |
+| Name           | varchar(255) | NO   |     | NULL              |                |
+| Description    | text         | YES  |     | NULL              |                |
+| Type           | varchar(50)  | YES  |     | NULL              |                |
+| Technology     | varchar(50)  | YES  |     | NULL              |                |
+| Org_Body       | varchar(50)  | YES  |     | NULL              |                |
+| Org_Faculty_ID | int(11)      | NO   |     | NULL              |                |
+| Date           | date         | NO   |     | NULL              |                |
+| No_of_Days     | int(11)      | YES  |     | NULL              |                |
+| Start_Time     | time         | YES  |     | NULL              |                |
+| End_Time       | time         | YES  |     | NULL              |                |
+| Venue          | varchar(255) | YES  |     | NULL              |                |
+| Reg_Link       | varchar(255) | YES  |     | NULL              |                |
+| Created_On     | timestamp    | NO   |     | CURRENT_TIMESTAMP |                |
++----------------+--------------+------+-----+-------------------+----------------+
+14 rows in set (0.03 sec)
+
+
+INSERT INTO Events (Name, Description, Type, Technology, Org_Body, Org_Faculty_ID, Date, No_of_Days, Start_Time, End_Time, Venue, Reg_Link) VALUES ();
+
+
+------------------------------------------------------------- Users ------------------------------------------------------------------------
+
+CREATE TABLE Users (Faculty_ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY, Username VARCHAR(255) NOT NULL UNIQUE, Email VARCHAR(255) NOT NULL UNIQUE, Password VARCHAR(255) NOT NULL, Created_On TIMESTAMP DEFAULT NOW());
+
+ALTER TABLE Users AUTO_INCREMENT = 100;
+
+mysql> DESC Users;
++------------+--------------+------+-----+-------------------+----------------+
+| Field      | Type         | Null | Key | Default           | Extra          |
++------------+--------------+------+-----+-------------------+----------------+
+| Faculty_ID | int(11)      | NO   | PRI | NULL              | auto_increment |
+| Username   | varchar(255) | NO   | UNI | NULL              |                |
+| Email      | varchar(255) | NO   | UNI | NULL              |                |
+| Password   | varchar(255) | NO   |     | NULL              |                |
+| Created_On | timestamp    | NO   |     | CURRENT_TIMESTAMP |                |
++------------+--------------+------+-----+-------------------+----------------+
+5 rows in set (0.03 sec)
+
+
+
