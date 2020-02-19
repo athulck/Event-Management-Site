@@ -30,10 +30,10 @@ Now, create the tables according to the file 'DB_tables' in the 'EventGuy' datab
 
 ## Server Requirements
 
-[x] PHP version 5.6 or newer is recommended.
-[x] CodeIgniter 3.x
-[x] MySQL 5.6.30-1 or higher
-[x] Apache Server
+- [x] PHP version 5.6 or newer is recommended.
+- [x] CodeIgniter 3.x
+- [x] MySQL 5.6.30-1 or higher
+- [x] Apache Server
 
 If you are using apache server (apache2 service), make sure that you override .htaccess files in Apache configuration. Follow the steps to do that:
 ```
