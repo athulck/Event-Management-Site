@@ -1,7 +1,7 @@
 # Event-Management-Site
 This is a database based project (CS-333). We created a website on Codeignitor and Bootstrap which is used to manage various college events.
 
-##Database Setup
+## Database Setup
 
 Start the mysql service and run the program
 
@@ -28,12 +28,12 @@ Create a database in MySQL and name it 'EventGuy'
 Now, create the tables according to the file 'DB_tables' in the 'EventGuy' database.
 
 
-##Server Requirements
+## Server Requirements
 
-PHP version 5.6 or newer is recommended.
-CodeIgniter 3.x
-MySQL 5.6.30-1 or higher
-Apache Server
+[x] PHP version 5.6 or newer is recommended.
+[x] CodeIgniter 3.x
+[x] MySQL 5.6.30-1 or higher
+[x] Apache Server
 
 If you are using apache server (apache2 service), make sure that you override .htaccess files in Apache configuration. Follow the steps to do that:
 ```
